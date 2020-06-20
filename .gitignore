@@ -8,6 +8,5 @@
 LICENSE.txt
 /log/
 .idea/
-composer.json
 composer.lock
 .env
