@@ -10,3 +10,4 @@ LICENSE.txt
 .idea/
 composer.lock
 .env
+.user.ini
