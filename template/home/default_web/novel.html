@@ -3,10 +3,14 @@
 	<head>
 	    <meta charset="utf-8">
 	    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-	    <meta name="keywords" content="{$web['meta_keywords']}">
-	    <meta name="description" content="{$web['meta_description']}">
-	    <title>{$title}-{$ctitle}-{$web['meta_title']}</title>
+	    <meta name="keywords" content="{$title},{$title}最新章节">
+	    <meta name="description" content="{$title}最新章节由网友提供，《{$title}》情节跌宕起伏、扣人心弦，是一本情节与文笔俱佳的网游小说小说，{$web['meta_title']}免费提供{$author}最新清爽干净的文字章节在线阅读.">
+	    <title>{$title}最新章节-{$ctitle}-{$web['meta_title']}</title>
 	    <link rel="stylesheet" href="{$home_tplpath}css/style.css" type="text/css"/>
+
+		<meta name="mobile-agent" content="format=html5;url={$web['wap_url']}{php}echo $_SERVER['PHP_SELF'].'?'.$_SERVER['QUERY_STRING']{/php}">
+		<meta http-equiv="Cache-Control" content="no-transform" />
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
     </head>
 	<body>
 		{include file="template/home/default_web/header.html" /}

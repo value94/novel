@@ -47,9 +47,9 @@ class Base extends Controller{
 
     protected function fetch($template = '', $vars = [], $config = [], $renderContent = false)
     {
-        if(!$this->check_template($template)){
+        /*if(!$this->check_template($template)){
             return urldecode('%e8%af%b7%e8%b4%ad%e4%b9%b0%e6%a8%a1%e7%89%88!');
-        }
+        }*/
         $fetch=$this->view->fetch($template, $vars, $config, $renderContent);
         $fetch=model('common/DataOperation')->replace_str($this->view,$fetch);
         if(!in_array(strtolower($this->request->controller()."/".$this->request->action()),['comment/tree','comment/lists','chapter/lists'])){
