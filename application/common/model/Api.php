@@ -318,9 +318,9 @@ class Api extends Model
 		            	}
 						$chapter['word']=$word;
 		                $chapter['title']=empty($getchapter['chapter_title'])?'':$getchapter['chapter_title'];
-		                $chapter['content']=empty($getchapter['chapter_content'])?'章节内容转码失败！':$getchapter['chapter_content'];
+		                $chapter['content']=empty($getchapter['chapter_content'])?'章节内容转码失败,请刷新页面重试！':$getchapter['chapter_content'];
 		            }else{
-		                $chapter['content']='章节内容转码失败！';
+		                $chapter['content']='章节内容转码失败,请刷新页面重试！';
 		            }
 		    	}else{
 		    		$chapter['content']=$this->get_chapter_content($chapter['path']);
