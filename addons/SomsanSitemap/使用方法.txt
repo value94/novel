@@ -1,0 +1,6 @@
+将该文件夹放入服务器  addons  目录
+
+
+访问安装
+
+http://域名/admin/addons/install?addon_name=SomsanSitemap
